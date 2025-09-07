@@ -1,14 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin } from "lucide-react";
 
-interface DestinationCardProps {
-  title: string;
-  description: string;
-  imageUrl: string;
-  location: string;
-}
-
-const DestinationCard = ({ title, description, imageUrl, location }: DestinationCardProps) => {
+const DestinationCard = ({ title, description, imageUrl, location }) => {
   return (
     <Card className="group cursor-pointer overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 bg-gradient-to-br from-background to-muted">
       <div className="relative overflow-hidden">

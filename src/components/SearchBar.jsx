@@ -2,13 +2,7 @@ import { Search } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
-interface SearchBarProps {
-  className?: string;
-  placeholder?: string;
-  large?: boolean;
-}
-
-const SearchBar = ({ className = "", placeholder = "Search destinations...", large = false }: SearchBarProps) => {
+const SearchBar = ({ className = "", placeholder = "Search destinations...", large = false }) => {
   return (
     <div className={`relative ${className}`}>
       <div className="relative">

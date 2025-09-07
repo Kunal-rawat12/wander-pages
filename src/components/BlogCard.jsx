@@ -2,16 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Calendar, User } from "lucide-react";
 
-interface BlogCardProps {
-  title: string;
-  excerpt: string;
-  imageUrl: string;
-  author: string;
-  date: string;
-  category: string;
-}
-
-const BlogCard = ({ title, excerpt, imageUrl, author, date, category }: BlogCardProps) => {
+const BlogCard = ({ title, excerpt, imageUrl, author, date, category }) => {
   return (
     <Card className="group cursor-pointer overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 bg-gradient-to-br from-background to-muted">
       <div className="relative overflow-hidden">

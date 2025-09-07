@@ -1,14 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Linkedin, Twitter, Mail } from "lucide-react";
 
-interface TeamCardProps {
-  name: string;
-  role: string;
-  imageUrl: string;
-  bio: string;
-}
-
-const TeamCard = ({ name, role, imageUrl, bio }: TeamCardProps) => {
+const TeamCard = ({ name, role, imageUrl, bio }) => {
   return (
     <Card className="group text-center overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 bg-gradient-to-br from-background to-muted">
       <CardContent className="p-6">
