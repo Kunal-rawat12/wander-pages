@@ -1,5 +1,6 @@
 import SearchBar from "@/components/SearchBar";
 import DestinationCard from "@/components/DestinationCard";
+import ExploreTabNavigation from "@/components/ExploreTabNavigation";
 
 const Explore = () => {
   const destinations = [
@@ -82,6 +83,11 @@ const Explore = () => {
           <div className="max-w-2xl mx-auto">
             <SearchBar placeholder="Search destinations..." />
           </div>
+        </div>
+
+        {/* Tab Navigation Section */}
+        <div className="mb-8">
+          <ExploreTabNavigation />
         </div>
 
         {/* Destinations Grid */}
