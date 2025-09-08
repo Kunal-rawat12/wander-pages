@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { X } from "lucide-react";
 
 const ExploreTabNavigation = () => {
-  const [activeTab, setActiveTab] = useState(null);
+  const [activeTab, setActiveTab] = useState("docs");
 
   const tabs = [
     {
